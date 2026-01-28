@@ -6,6 +6,10 @@ cask "corner-monitor" do
   desc "A performance monitor placed in the corner of the screen."
   homepage "https://github.com/zonghow/corner-monitor"
   app "corner-monitor.app"
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/corner-monitor.app"]
+  end
   zap trash: [
     "~/Library/Application\ Support/io.github.zonghow.corner-monitor"
   ]
