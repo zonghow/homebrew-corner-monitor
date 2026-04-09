@@ -1,6 +1,6 @@
 cask "corner-monitor" do
-  version "0.0.2"
-  sha256 "0e72c4616f1dc0562ebf925046427c8eaf2509cfb068db131c340e4c93227b96"
+  version "0.0.3"
+  sha256 "f791eb63bf7eac88ac3dc7dcd35eda490547557436809062e10002236ea4d534"
   url "https://github.com/zonghow/corner-monitor/releases/download/v#{version}/Corner.Monitor_#{version}_aarch64.dmg"
   name "Corner Monitor"
   desc "A performance monitor placed in the corner of the screen."
